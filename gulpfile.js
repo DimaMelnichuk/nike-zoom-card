@@ -7,6 +7,14 @@ let gulp = require('gulp'),
 		del = require('del'),
 		autoprefixer = require('gulp-autoprefixer');
 		sourcemaps = require('gulp-sourcemaps');
+		ghPages = require('gh-pages');
+		path = require('path');
+
+
+function deploy(cb) {
+	ghPages.publish(path.join(process.cwd(), './dist'), cb);
+}
+exports.deploy = deploy;
 
 gulp.task('clean', async function(){
 	del.sync('dist')
