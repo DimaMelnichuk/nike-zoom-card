@@ -1,0 +1,1 @@
+@@include('components/script.js')

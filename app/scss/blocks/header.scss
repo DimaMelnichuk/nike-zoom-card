@@ -1,0 +1,36 @@
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		z-index: 3;
+	}
+	// .header__container
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 75px;
+		position: relative;
+	}
+
+	// .header__logo
+
+	&__logo {
+		color: #fff;
+		position: relative;
+		z-index: 5;
+	}
+
+}

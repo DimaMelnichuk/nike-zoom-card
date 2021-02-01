@@ -1,0 +1,75 @@
+.swiper-slide {
+	// height: auto; autoHeight
+
+	&-active {
+		
+	}
+}
+.swiper-container {
+	padding: 0px 0px 30px 0px; 
+}
+
+// pagination
+.swiper-pagination {
+	bottom: 0;
+}
+.swiper-pagination-bullet {
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	background: transparent;
+	border: 2px solid turquoise;
+	opacity: 1;
+
+	&-active {
+		background-color: turquoise;
+	}
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 15px;
+}
+
+// buttons 
+.swiper-button-prev,
+.swiper-button-next {
+	background-color: transparent;
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	color: #fff;
+	border: 2px solid;
+
+	&:hover {
+		@media (min-width: $md2+px) {
+			color: #019bad;
+
+			&::after {
+				color: #019bad;
+			}
+		}
+	}
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	position: absolute;
+	font-family: "FontAwesome";
+	font-size: 18px;
+}
+.swiper-button-prev::after {
+	content: "\f060";
+}
+.swiper-button-next::after {
+	content: "\f061";
+}
+
+// numbers
+.swiper-pagination-fraction {
+	
+}
+.swiper-pagination-current {
+
+}
+.swiper-pagination-total {
+
+}

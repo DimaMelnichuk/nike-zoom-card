@@ -1,0 +1,271 @@
+.info {
+	width: 50%;
+	background-color: #fff;
+	z-index: 1;
+	padding: 35px 40px;
+	box-shadow: 
+	-15px 0 35px rgba(0, 0, 0, 0.1),
+	0 -15px 35px rgba(0,0,0, 0.1),
+	0 15px 35px rgba(0,0,0, 0.1);
+
+	@media (max-width: 450px) {
+		padding: 20px;
+	}
+
+	&__name {
+		padding: 0 0 10px 0;
+	}
+	// .info__name-inner
+
+	&__name-inner {
+		display: flex;
+		align-items: center;
+	}
+
+	// .info__name-title
+
+	&__name-title {
+		margin-right: 10px;
+		font-size: 2rem;
+		color: #333;
+		font-weight: 900;
+
+		@media (max-width: 400px) {
+			font-size: 1.3rem;
+		}
+	}
+
+	// .info__name-new
+
+	&__name-new {
+		background-color: var(--primary);
+		text-transform: uppercase;
+		color: #fff;
+		padding: 3px 10px;
+		border-radius: 5px;
+
+		@media (max-width: 400px) {
+			padding: 3px 7px;
+		}
+	}
+
+	// .info__name-subtitle
+
+	&__name-subtitle {
+		font-weight: 500;
+		color: #444;
+		margin-top: 3px;
+		text-transform: capitalize;
+	}
+
+	// .info__descr
+
+	&__descr {
+		padding: 10px 0;
+	}
+
+	// .info__descr-title
+
+	&__descr-title,
+	&__colors-title,
+	&__size-title {
+		color: #3a3a3a;
+		font-weight: 600;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+
+		@media (max-width: 400px) {
+			font-size: 1.0rem;
+		}
+	}
+
+	// .info__descr-text
+
+	&__descr-text {
+		color: #555;
+		font-size: 17px;
+		line-height: 19px;
+
+		@media (max-width: 400px) {
+			font-size: 15px;
+			line-height: 16px;
+		}
+	}
+
+	// .info__colors
+
+	&__colors {
+		padding: 10px 0;
+	}
+
+
+	// .info__colors-list
+
+	&__colors-list {
+		padding: 8px 0;
+		display: flex;
+		align-items: center;
+	}
+
+	// .info__colors-color
+
+	&__colors-color {
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		margin: 0 10px;
+		border: 5px solid;
+		cursor: pointer;
+
+		&[color="blue"] {
+			background-color: #2175f5;
+			border-color: #2175f5;
+		}
+
+		&[color="orange"] {
+			background-color: #ff8844;
+			border-color: #ff8844;
+		}
+
+		&[color="green"] {
+			background-color: #29b864;
+			border-color: #29b864;
+		}
+
+		&[color="red"] {
+			background-color: #ff5521;
+			border-color: #ff5521;
+		}
+
+		&[color="black"] {
+			background-color: #444;
+			border-color: #444;
+		}
+
+		&.active {
+			border-color: #fff;
+			box-shadow: 0 0 10px .5px rgba(0, 0, 0, 0.2);
+			transform: scale(1.1);
+		}
+	}
+
+	// .info__size
+
+	&__size {
+		padding: 10px 0;
+		margin-bottom: 10px;
+	}
+
+
+	// .info__size-list
+
+	&__size-list {
+		display: flex;
+		align-items: center;
+		padding: 8px 0;
+	}
+
+	// .info__size-sizes
+
+	&__size-sizes {
+		width: 40px;
+		height: 40px;
+		border-radius: 6px;
+		background-color: #eee;
+		margin: 0 10px;	 
+		text-align: center;
+		line-height: 40px;
+		font-size: 1.1rem;
+		font-weight: 500;
+		cursor: pointer;
+		transition: .3s;
+
+		@media (max-width: 400px) {
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 1rem;
+		}
+
+		&.active {
+			background-color: var(--primary);
+			color: #fff;
+		}
+	}
+
+	// .info__buy
+
+	&__buy {
+		padding-top: 15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	// .info__buy-btn
+
+	&__buy-btn {
+		padding: .7rem 1rem;
+		background-color: var(--primary);
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 500;
+		font-size: 1.1rem;
+		transition: .5s;
+
+		@media (max-width: 450px) {
+			i {
+				display: none;
+			}
+		}
+
+		@media (max-width: 400px) {
+			font-size: 1rem;
+			padding: .5rem .7rem;
+		}
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	// .info__buy-price
+
+	&__buy-price {
+		color: #333;
+		display: flex;
+		align-items: flex-start;
+	}
+
+	// .info__buy-icon
+
+	&__buy-icon {
+		font-size: 1.4rem;
+		margin-right: 1px;
+
+		@media (max-width: 400px) {
+			font-size: 1rem;
+		}
+	}
+
+	// .info__buy-sum
+
+	&__buy-sum {
+		font-size: 2.1rem;
+		font-weight: 600;
+		line-height: 1;
+
+		@media (max-width: 400px) {
+			font-size: 1.4rem;
+		}
+	}
+
+	&__name,
+	&__descr,
+	&__colors,
+	&__size {
+		border-bottom: 1px solid #dadada;
+	}
+}
